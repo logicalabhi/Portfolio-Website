@@ -1,0 +1,289 @@
+  @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: cornsilk;
+}
+
+.sidebar {
+  position: absolute;
+  background-color: rgb(169, 167, 167);
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+  padding: 30px;
+  height: 100vh;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 20px;
+  padding: 28px 0px;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  width: 88vw;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+.background{
+  background-image: url(3.jpg);
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: 100vw;
+}
+
+.background1{
+  background-image: url(9.jpg);
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: 99vw;
+}
+.background2{
+  background-image: url(4.jpg);
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: 99vw;
+}
+
+.background3{
+  background-image: url(12.jpg);
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: 99vw;
+}
+
+.container {
+  display: flex;
+}
+
+.infoContainer {
+  height: 58vh;
+  width: 88vw;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devPic img {
+  height: 58vh;
+  margin: -22px 15px;
+}
+
+.devInfo {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+
+.hello {
+  font-size: 2.5em;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+  font-size: 2.1em;
+}
+
+.moreabout {
+  font-size: 1.8em;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons button {
+  padding: 5px 14px;
+  border-radius: 15px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: dodgerblue;
+  background-color: white;
+}
+footer{
+    background-color: black;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    height: 12vh;
+    width: 100vw;
+    bottom: -150px;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+
+
+/* contact */
+.mobile {
+  color: black;
+  font-size: 20px;
+}
+
+.email {
+  color: black;
+  font-size: 20px;
+}
+
+.contact {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  height: 60vh;
+  font-family: "Fira Sans", sans-serif;
+  padding: 0 25vw;
+  width: 20px;
+}
+
+.contact li {
+  padding: 10px;
+  list-style: circle solid black;
+  font-size: 20px;
+}
+.contact li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(237, 215, 186); */
+  height: 100vh;
+  width: 88vw;
+  font-family: "Fira Sans", sans-serif;
+  
+}
+
+.contactus {
+  margin-top: 25vh;
+  
+}
+.contactus img{
+  width: 30vw;
+}
+
+
+/* projects */
+
+.myprojects{
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+    color: black;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.frontend{
+width: 43vw;
+margin-left: 16px;
+}
+
+.dataanalysis{
+    width: 43vw;
+    margin-left: 18px;
+}
+
+/* My Intro */
+
+.introduction, .skillcontainer, .education{
+    font-family: "Fira Sans", sans-serif;
+    margin: 12px;
+    font-size: 20px;
+    color: black;
+  font-weight: bold;
+  
+}
+
+.skillItem, .college{
+    list-style-type: disc;
+    padding: 12px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+h1{
+  
+  color: black;
+  font-weight: bold;
+}
+
+
+@media (max-width: 220px) {
+.devInfo{
+font-size: 10px;
+}
+.sidebar{
+  transform: translate(-115px,0);
+  position: absolute;
+}
+}
+
+@media (max-width: 860px) {
+  .devPic img{
+    width: 230px;
+    height: 230px;
+  }
+}
+
+/* JavaScript */
+.hamburger{
+  position: absolute;
+top: 10px;
+left: 10px;
+cursor: pointer;
+}
+
+.ham{
+margin-left: -30px;
+margin-top: -8px;
+}
+
+.cross{
+  margin-left: 120px;
+  margin-top: -1px;
+}
+
+.sidebarGo{
+transform: translate(-170px,0);
+position: absolute;
+}
